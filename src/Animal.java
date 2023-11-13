@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
 
     protected String name;
     protected double weight;
@@ -13,6 +13,8 @@ public class Animal {
     public void walk () {
         System.out.println("животное идет по земле");
     }
+
+    public abstract void move ();
 }
 
 class Dog extends Animal {
